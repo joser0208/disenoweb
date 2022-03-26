@@ -1,0 +1,105 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+html,
+body,
+#background{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to right,#0D5C75, #199FB1, #A5D1E1);
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #199FB1, #0D5C75);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+.form-box{
+    top: 50px;
+    width: 400px;
+    height: 560px;
+    position: relative;
+    margin: 6% auto;
+    background: url("../../assets/fondo.jpg");
+    padding: 0px;
+    overflow:hidden;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    font-size: 18px;
+
+}
+.input-group{
+    top: 50px;
+    position: absolute;
+    width: 280px;
+    transition: 5.s;
+    left:40px;
+}
+.input-field{
+    width: 100%;
+    padding:10px 0;
+    margin:5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom:1px solid #999 ;
+    outline: none;
+    background: transparent;
+    margin-top: 40px;
+}
+.submint-btn{
+    font-weight: bold;
+    width: 85%;
+    padding:10px 30px;
+    cursor:pointer;
+    display:block;
+    background:linear-gradient(to right,#0D5C75, #199FB1, #A5D1E1);
+    border:0;
+    position:relative;
+    left:20px;
+    box-shadow: 0 0 20px 9px#e4e4e4;
+}
+.volver-btn{
+    top: 20px;
+    width: 150px;
+    background: url("../../assets/fondo.jpg");
+    border:0;
+    left:40px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <ul> 
+            <li><a href="PaginaChofer" class="nav-link">Chofer</a></li>
+            <li><a href="PaginaLogin" class="nav-link">Salir</a></li>
+            </ul>
+        </nav>
+      </header>
+   <div class="container">
+       <div class="title">Informacion Chofer</div>
+       <form [formGroup]="FormChofer" >
+           <div  class="user-details" >
+              <div class="input-box">
+                  <span class="details">Nombre Completo: </span>
+                  <input type="text" placeholder="Ingrese su Nombre Completo" required formControlName= "Nombre">
+              </div> 
+              <div class="input-box">
+                <span class="details">Apellidos: </span>
+                <input type="text" placeholder="Ingrese sus Apellidos" required formControlName= "Apellido" >
+            </div>  
+            <div class="input-box">
+                <span class="details">Correo: </span>
+                <input type="text" placeholder="Ingrese su correo ULACIT" required formControlName= "Correo">
+            </div> 
+            <div class="input-box">
+                <span class="details">Saldo: </span>
+                <input type="text" placeholder="Saldo" required formControlName= "Saldo">
+            </div> 
+           </div> 
+           
+       </form>
+   </div>
+
+</body>
+</html>

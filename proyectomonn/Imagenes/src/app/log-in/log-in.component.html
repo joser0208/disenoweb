@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sining</title>
+  
+</head>
+<body>
+   <div class="form-box">
+       <div class="button-box">
+           <div id="btn"></div>
+           <button type ="button" class="toggle-btn" (click)="login()">Log In</button>
+           <button type ="button" class="toggle-btn" (click)="registrar()">Registrar</button>
+       </div>
+       <div class="image"> 
+        <img src="../../assets/Busstop.png" width="400" height="350">
+    </div>
+     <form [formGroup]="FormLogin" id="login" class="input-group" (ngSubmit)="Login()">
+         <input type="text" class="input-field" placeholder= "Correo" required formControlName= "Correo">
+        <input type="password" class="input-field" placeholder="Ingrese su Password" required formControlName= "Contrasenna">
+        <br>
+          <div class="form-check">
+            <input style="margin: 0%;" class="form-check-input" type="radio" id="flexRadioDefault2" checked formControlName= "TipoUsuario" value= 2 >
+            <label class="form-check-label" for="flexRadioDefault2">
+           Cliente
+            </label>
+          </div>
+          <div class="form-check">
+            <input  style="margin: 0%;" class="form-check-input" type="radio" id="flexRadioDefault3" checked formControlName= "TipoUsuario" value= 3 >
+            <label class="form-check-label" for="flexRadioDefault3">
+            Chofer
+            </label>
+          </div>
+          <div class="form-check">
+            <input  style="margin: 0%;" class="form-check-input" type="radio"  id="flexRadioDefault4" checked formControlName= "TipoUsuario" value= 1>
+            <label class="form-check-label" for="flexRadioDefault4">
+              Administrador
+            </label>
+          </div>
+        <button type="submit" class="submint-btn">Log in</button>
+     </form>
+     <form [formGroup]="FormRegistro" id="registrar" class="input-group" (ngSubmit)="Registro()">
+        <input type="text" class="input-field" placeholder="Nombre" required formControlName= "Nombre">
+        <input type="text" class="input-field" placeholder="Apellido" required formControlName= "Apellido">
+        <input type="email" class="input-field" placeholder="Correo" required formControlName= "Correo">
+        <input type="password" class="input-field" placeholder="Ingrese Password" required formControlName= "Contrasenna">
+        <input type="checkbox" class="check-box"><span>Acuerdo con los terminos y condiciones</span>
+        <button type="submit" class="submint-btn">Registrar</button>
+     </form>
+   </div>
+   
+</body>
+</html>

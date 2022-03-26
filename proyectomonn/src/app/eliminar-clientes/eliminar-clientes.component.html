@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EliminarCliente</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <ul> 
+            <li><a href="PaginaAdministrador" class="nav-link">Administrador</a></li>
+            <li><a href="PaginaLogin" class="nav-link">Salir</a></li>
+            </ul>
+        </nav>
+      </header>
+    <div class="container-route">
+        <h1>ELIMINAR CLIENTES</h1>
+        <div class="tabla">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Id_usuario</th>
+                    <th>Correo</th>
+                    <th>Saldo</th>
+                </tr>
+                <tr *ngFor="let eliminar_clientes of Eliminar_Clientes">
+                    <td>{{eliminar_clientes.Nombre}}</td>
+                    <td>{{eliminar_clientes.Apellido}}</td>
+                    <td>{{eliminar_clientes.Id_usuario}}</td>
+                    <td>{{eliminar_clientes.Correo}}</td>
+                    <td>{{eliminar_clientes.Saldo}}</td>
+                    <p><button (click)= "BorrarCliente (eliminar_clientes.Id_usuario)">Borrar</button></p>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

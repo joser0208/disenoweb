@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+html,
+body,
+#background{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to bottom right,#0D5C75, #199FB1, #A5D1E1);
+}
+.caja
+{ 
+    color:darkslategrey ;
+    font-size: 30px;  
+    text-align: center; 
+    padding: 40px;
+    font-weight: bold;
+}
+.caja1 
+{ 
+    color:#636363; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: url("../../assets/fondo.jpg");
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 20px 20px 20px 20px; 
+    -moz-border-radius: 20px 20px 20px 20px; 
+    -webkit-border-radius: 20px 20px 20px 20px; 
+}
+.volver-btn{
+    top: 20px;
+    width: 150px;
+    background: url("../../assets/fondo.jpg");
+    border:0;
+    left:40px;
+}

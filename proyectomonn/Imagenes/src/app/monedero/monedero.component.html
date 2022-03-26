@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Monedero</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <ul> 
+            <li><a href="PaginaRegistro" class="nav-link">Menu Principal</a></li>
+            <li><a href="PaginaLogin" class="nav-link">Salir</a></li>
+            </ul>
+        </nav>
+      </header>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+        </div>
+        <form id="Monedero" >
+            <div class="title">
+                <h2>Monedero</h2>
+                <p>Ingrese la información del metodo de pago a utilizar:</p>
+            </div>
+            <form [formGroup]="FormMonedero" id="monedero" class="input-group" (ngSubmit)="Monedero()">
+                <input type="text" class="input-field" placeholder="Numero de tarjeta" maxlength="19" required formControlName= "Numero_Tarjeta">
+                <input type="datetime" class="input-field" placeholder="Mes" maxlength="2" required formControlName = "Mes" >
+                <input type="datetime" class="input-field" placeholder="Año" maxlength="4" required formControlName = "Ano">
+                <input type="text" class="input-field" placeholder="CCV" maxlength="3" required formControlName = "Codigo">
+                <button type="submit" class="submint-btn">G U A R D A R</button>
+            </form>
+            
+        </form>
+    </div>
+</body>
+</html>

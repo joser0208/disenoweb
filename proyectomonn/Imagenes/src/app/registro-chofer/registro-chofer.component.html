@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <ul> 
+            <li><a href="PaginaAdministrador" class="nav-link">Administrador</a></li>
+            <li><a href="PaginaLogin" class="nav-link">Salir</a></li>
+            </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <div class="login-container">
+            <div class="register">
+                <h2 class="titulo">REGISTRO PARA CHOFERES</h2>
+                <form [formGroup]="FormRegistroChofer" id="registrar" class="input-group" (ngSubmit)="RegistroChofer()">
+                    <input type="text" placeholder="Nombre" class="nombre" required formControlName= "Nombre">
+                    <input type="text" placeholder="Apellido" class="apellido1" required formControlName= "Apellido">
+                    <input type="text" class="correo" placeholder= "Correo" required formControlName= "Correo">
+                    <input type="password" placeholder="Contraseña" class="pass" required formControlName= "Contrasenna">
+                    <input type="submit" class="submit" value="REGISTRARSE">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rutas-Admin</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <ul> 
+            <li><a href="PaginaAdministrador" class="nav-link">Administrador</a></li>
+            <li><a href="PaginaLogin" class="nav-link">Salir</a></li>
+            </ul>
+        </nav>
+      </header>
+    <div class="contenedor">
+        <div class="inicio">Rutas para Administrador</div>
+        <form [formGroup]= "FormRutas" (ngSubmit)="EncontrarRuta()" >
+            <div class="input-box">
+                <span class="detalles">Tarifa de Parada</span>
+                <input type="number" class="form-control" placeholder="Monto" required formControlName= "Tarifa_Parada">
+            </div>
+            <div class="input-box">
+                <span class="detalles">Localizacion</span>
+                <input type="text" class="form-control" placeholder="Ubicacion" required formControlName= "Localizacion">
+            </div>
+            <div class="input-box">
+                <span class="detalles">Chofer</span>
+                <select class="Cuenta" aria-label="Default select example" required formControlName= "Id_Chofer">
+                    <option selected *ngFor="let Chofer of Choferes" value= {{Chofer.Id_Chofer}}>{{Chofer.Chofer}}</option>
+                  </select>
+            </div>
+            <div class="boton">
+                <input type="submit" value="Guardar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

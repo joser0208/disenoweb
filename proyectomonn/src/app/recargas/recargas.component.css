@@ -1,0 +1,141 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+html,
+body,
+#background{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0D5C75, #199FB1,  #A5D1E1);
+}
+html,body{
+    height: 100%
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #199FB1, #0D5C75);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+.contenedor{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    width: 600px;
+    height: 600px;
+    background: url("../../assets/fondo.jpg");
+    padding: 20px;
+    
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    margin-top: -85px;
+    margin-left: -140px;
+}
+
+.contenedor .inicio{
+    font-size: 25px;
+    font-weight:500 ;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.contenedor form .recarga-usuario {
+    display: flex;
+    margin: 20px 0 12px 0;
+}
+
+.form-control{
+    padding: 2%;
+}
+
+.input-box{
+    margin-bottom: 15px;
+    width: calc(100%/2-20px);
+    margin-bottom: 5%;
+}
+
+form .informacion .comprobante{
+   font-size: 20px;
+    font-weight: 500;
+}
+
+.informacion .categoria label{
+display: flex;
+}
+
+.informacion .categoria .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .categoria label .one, 
+#dot-2:checked ~ .categoria label .two{
+background: rgb(101, 197, 252);
+}
+
+
+form .boton {
+    height: 45px;
+    margin: 45px;
+
+}
+
+form .boton input {
+    height: 100%;
+    width: 100% ;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #0D5C75, #199FB1,  #A5D1E1);
+}
+
+form .boton input:hover {
+    background: linear-gradient(-135deg,  #0D5C75, #199FB1, #A5D1E1);  
+}
+.volver-btn{
+    top: 20px;
+    width: 150px;
+    background: url("../../assets/fondo.jpg");
+    border:0;
+    left:40px;
+}
