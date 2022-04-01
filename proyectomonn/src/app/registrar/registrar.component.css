@@ -10,7 +10,7 @@ body {
 	margin: auto;
 }
 header {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.larepublica.net/storage/images/2021/02/23/20210223104934.bus-electrico.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.imer.mx/tropicalisima/wp-content/uploads/sites/19/Cine_Audio.jpg);
 	height: 100vh;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -46,7 +46,7 @@ header {
 }
 .welcome-text {
 	position: absolute;
-	width: 600px;
+	width: 700px;
 	height: 300px;
 	margin: 20% 30%;
 	text-align: center;

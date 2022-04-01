@@ -4,7 +4,6 @@ import {MonederoComponent} from "./monedero/monedero.component";
 import {RecargasComponent} from "./recargas/recargas.component";
 import {LogInComponent} from "./log-in/log-in.component";
 import {InformacionAppComponent} from "./informacion-app/informacion-app.component";
-import {ChoferComponent} from "./chofer/chofer.component";
 import {AdministradorComponent} from "./administrador/administrador.component";
 
 const app_routes: Routes =[
@@ -12,7 +11,6 @@ const app_routes: Routes =[
     {path:'Recargas', component: RecargasComponent},
     {path:'LogIn', component: LogInComponent},
     {path:'InformacionApp', component: InformacionAppComponent},
-    {path:'Chofer', component: ChoferComponent},
     {path:'Administrador', component: AdministradorComponent},
     {path:'**', pathMatch:'full', redirectTo:''}
 ];

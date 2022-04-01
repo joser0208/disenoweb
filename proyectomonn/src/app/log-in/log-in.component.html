@@ -5,6 +5,10 @@
   
 </head>
 <body>
+  <div class="volver-btn">
+    <a href="http://localhost:4200/PaginaRegistro">
+    <button type="submit" class="volver-btn"> DEVOLVER</button></a>
+   </div>
    <div class="form-box">
        <div class="button-box">
            <div id="btn"></div>
@@ -12,30 +16,28 @@
            <button type ="button" class="toggle-btn" (click)="registrar()">Registrar</button>
        </div>
        <div class="image"> 
-        <img src="../../assets/Busstop.png" width="400" height="350">
+        <img src="../../assets/palomitas.jpg" width="400" height="350">
     </div>
      <form [formGroup]="FormLogin" id="login" class="input-group" (ngSubmit)="Login()">
          <input type="text" class="input-field" placeholder= "Correo" required formControlName= "Correo">
         <input type="password" class="input-field" placeholder="Ingrese su Password" required formControlName= "Contrasenna">
-        <br>
+          <br>
+          <br>
           <div class="form-check">
             <input style="margin: 0%;" class="form-check-input" type="radio" id="flexRadioDefault2" checked formControlName= "TipoUsuario" value= 2 >
             <label class="form-check-label" for="flexRadioDefault2">
+        
            Cliente
             </label>
           </div>
-          <div class="form-check">
+          <br><div class="form-check">
             <input  style="margin: 0%;" class="form-check-input" type="radio" id="flexRadioDefault3" checked formControlName= "TipoUsuario" value= 3 >
             <label class="form-check-label" for="flexRadioDefault3">
-            Chofer
-            </label>
-          </div>
-          <div class="form-check">
-            <input  style="margin: 0%;" class="form-check-input" type="radio"  id="flexRadioDefault4" checked formControlName= "TipoUsuario" value= 1>
-            <label class="form-check-label" for="flexRadioDefault4">
+          
               Administrador
             </label>
           </div>
+          <br>
         <button type="submit" class="submint-btn">Log in</button>
      </form>
      <form [formGroup]="FormRegistro" id="registrar" class="input-group" (ngSubmit)="Registro()">

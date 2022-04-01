@@ -8,11 +8,11 @@ body,
 #background{
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(to bottom right,#0D5C75, #199FB1, #A5D1E1);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.imer.mx/tropicalisima/wp-content/uploads/sites/19/Cine_Audio.jpg);
 }
 .caja
 { 
-    color:darkslategrey ;
+    color:rgb(67, 68, 68) ;
     font-size: 30px;  
     text-align: center; 
     padding: 40px;
@@ -30,7 +30,9 @@ body,
     padding: 20px; 
     border-radius: 20px 20px 20px 20px; 
     -moz-border-radius: 20px 20px 20px 20px; 
-    -webkit-border-radius: 20px 20px 20px 20px; 
+    -webkit-border-radius: 20px 20px 20px 20px;
+    opacity:0.7;
+    filter:alpha(opacity=40);
 }
 .volver-btn{
     top: 20px;

@@ -12,7 +12,6 @@ import { RegistroChoferComponent } from './registro-chofer/registro-chofer.compo
 import { PruebaComponent } from './prueba/prueba.component';
 import { MonederoComponent } from './monedero/monedero.component';
 import { InformacionAppComponent } from './informacion-app/informacion-app.component';
-import { ChoferComponent } from './chofer/chofer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistroAdministradorComponent } from './registro-administrador/registro-administrador.component';
@@ -37,7 +36,6 @@ import { InfoChoferComponent } from './info-chofer/info-chofer.component';
     PruebaComponent,
     MonederoComponent,
     InformacionAppComponent,
-    ChoferComponent,
     RegistroAdministradorComponent,
     RutasComponent,
     PagoComponent,

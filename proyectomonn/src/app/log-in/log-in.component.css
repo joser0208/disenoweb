@@ -8,7 +8,7 @@ body,
 #background{
     width: 100vw;
     min-height: 100vh;
-    background:linear-gradient(to right,#0D5C75, #199FB1, #A5D1E1);
+    background:linear-gradient(to right,#e7d805,#dbd033, #d3c54b, #eaec6b);
 }
 html,body{
     height: 100%
@@ -37,12 +37,13 @@ margin-left: -50px;
     width: 235px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px#b3b3ff;
+    box-shadow: 0 0 20px 9px #b3b3ff;
     border-radius: 30px;
 }
 .toggle-btn{
     padding: 10px 30px;
-    cursor: pointer;
+    /*cursor: pointer;*/
+    cursor:all-scroll;
     background: transparent;
     border:0;
     outline: none;
@@ -54,12 +55,12 @@ margin-left: -50px;
     position: absolute;
     width: 120px;
     height: 100%;
-    background:linear-gradient(to right,#0D5C75, #199FB1, #A5D1E1);
+    background:linear-gradient(to right,#880e0e, #c43434, #e0878d,#daa3a7);
     border-radius: 30px;
     transition: 5.s;
 }
 .image{
-   opacity:0.4;
+   opacity:0.7;
    filter:alpha(opacity=40);
 }
 .input-group{
@@ -90,7 +91,7 @@ margin-left: -50px;
     cursor:pointer;
     display:block;
     margin:auto;
-    background:linear-gradient(to right,#0D5C75, #199FB1, #A5D1E1);
+    background:linear-gradient(to right,#880e0e, #be2e2e,  #e0878d,#daa3a7);
     border:0;
     outline: none;
     border-radius: 30px;

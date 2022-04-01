@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdministradorComponent } from './administrador/administrador.component';
-import { ChoferComponent } from './chofer/chofer.component';
 import { InformacionAppComponent } from './informacion-app/informacion-app.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { MonederoComponent } from './monedero/monedero.component';
@@ -25,7 +24,6 @@ const routes: Routes =
 {path:'PaginaPrueba', component:PruebaComponent},
 {path:'PaginaAdministrador', component:AdministradorComponent},
 {path:'PaginaMonedero', component:MonederoComponent},
-{path:'PaginaChofer', component:ChoferComponent},
 {path:'PaginaRegistroAdmin', component:RegistroAdministradorComponent},
 {path:'PaginaSobreNosotros', component:InformacionAppComponent},
 {path:'PaginaRutas', component:RutasComponent},
