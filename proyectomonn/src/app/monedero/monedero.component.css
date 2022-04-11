@@ -7,7 +7,7 @@ body,
 #background{
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(to right,#0D5C75, #199FB1, #A5D1E1);
+    background:linear-gradient(to right,#880e0e, #c43434, #e0878d,#daa3a7);
 }
 header {
     position: fixed;
@@ -25,7 +25,7 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(135deg, #199FB1, #0D5C75);
+    background: linear-gradient(135deg, #292828, #131212);
   }
   
   li {
@@ -38,6 +38,7 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-decoration: underline;
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -50,6 +51,7 @@ header {
     height: 560px;
     position: relative;
     margin: 6% auto;
+    /*background: url("../../assets/fondo.jpg");*/
     background: url("../../assets/fondo.jpg");
     padding: 0px;
     overflow:hidden;
@@ -64,6 +66,8 @@ header {
     margin-left: -50px;
     font-size: 18px;
 
+    
+
 }
 .input-group{
     top: 50px;
@@ -72,6 +76,7 @@ header {
     transition: 5.s;
     left:40px;
 }
+
 .input-field{
     width: 100%;
     padding:10px 0;
@@ -90,11 +95,11 @@ header {
     padding:10px 30px;
     cursor:pointer;
     display:block;
-    background:linear-gradient(to right,#0D5C75, #199FB1, #A5D1E1);
+    background:linear-gradient(to right,#750d0dcb, #b1191967, #8001012f);
     border:0;
     position:relative;
     left:20px;
-    box-shadow: 0 0 20px 9px#e4e4e4;
+    box-shadow: 0 0 20px 9px #e4e4e4;
 }
 .volver-btn{
     top: 20px;
